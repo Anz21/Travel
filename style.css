@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(assets/home/background-home-desktop.jpg);
+    width: 100%;
+    height: 100%;
+    background-repeat:no-repeat ;
+    background-size: cover;
+}
+
+.logo{
+    position: relative;
+    top: 20px;
+    left: 30px;
+}
+
+.navbar{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    top: 30px;
+}
+
+.line hr{
+    width: 37vw;
+    color: #fff;
+    position: relative;
+    top: 50px;
+    z-index: 9999;
+    background-color: #979797;
+}
+
+.menu{
+    display: flex;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);     
+    width: 40%;
+    height: 100px;
+    align-items:center;
+    justify-content:left;
+}
+
+
+
+
+.menu ul{
+    display: flex;
+    list-style: none;
+    align-items:center;
+    justify-content:left;
+    
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 30px;
+    font-size: 20px;
+    font-family: 'Titillium Web', sans-serif;
+    text-transform: uppercase;
+}
+
+
+.menu ul li a:hover{
+    border-bottom: 3px solid #fff;
+}
+
+.mid1{
+    position: relative;
+    display: flex;
+    top: 250px;
+    justify-content: space-evenly;
+}
+
+.mid{
+    position: relative;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Titillium Web', sans-serif;
+    left: 75px;
+}
+
+.mid h1{
+    font-size: 80px;
+    text-transform: uppercase;
+   letter-spacing: 5px;
+}
+
+.mid p{
+    width: 40%;
+    font-size: 20px;
+}
+
+.mid2{
+    position: relative;
+   background-color:#fff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+   height: 300px;
+   width: 350px;
+   right: 120px;
+}
+
+.mid h3{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.mid2 a{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-family: 'Titillium Web', sans-serif;
+    text-transform: uppercase;
+}
+
+
+@media (max-width: 35em){
+    .menu ul{
+        flex-direction: column;
+    }
+    .menu{
+        width: 40%;
+        height: 100%;
+        position: relative;
+        
+    }
+
+    .menu ul li a:hover{
+        border-bottom: none;
+    }
+
+    
+}
+
+
+@media (max-width:35em){
+    body{
+        background:url(assets/home/background-home-mobile.jpg);
+        width: 100%;
+        background-size: cover;
+    }
+}
+
+@media (max-width:35em){
+    .mid1{
+        display: flex;
+        flex-direction: column;
+    }
+    .mid2{
+        top: 30px;
+        right: -30px;
+    }
+}
